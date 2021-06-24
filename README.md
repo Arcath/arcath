@@ -1,16 +1,14 @@
-### Hi there 👋
+# Adam Laycock
 
-<!--
-**Arcath/arcath** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- START STATS -->
+ - 📘 133 Public Repositories
+ - 👀 9 Following
+<!-- END STATS -->
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- START SITE -->
+ - [ADSync Service Missing on Server](https://www.arcath.net/2021/06/adsync-missing)
+ - [Images with MDX-Bundler](https://www.arcath.net/2021/04/images-with-mdx-bundler)
+ - [MDX Bundler with Next.JS](https://www.arcath.net/2021/03/mdx-bundler)
+ - [Next.JS](https://www.arcath.net/2021/02/next.js)
+ - [Creating a WDS Discover Image](https://www.arcath.net/2021/01/creating-a-wds-discover-image)
+<!-- END SITE -->
