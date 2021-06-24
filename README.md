@@ -1,7 +1,7 @@
-# Adam Laycock
-
 <div align="center">
-  <img src="https://www.arcath.net/img/social/social.jpg" width="600" >
+  <a href="https://www.arcath.net">
+    <img src="https://www.arcath.net/img/social/social.jpg" width="600" style="border-radius:10px;" />
+  </a>
   <table border="0" cellspacing="0" cellpadding="0">
     <thead>
       <tr>
