@@ -19,9 +19,9 @@ export const siteContent = async (section: Section) => {
 
   const content = data
     .map(entry => {
-      return ` - [${entry.title}](https://www.arcath.net${entry.href})`
+      return `<li><a href="https://www.arcath.net${entry.href}">${entry.title}</a></li>`
     })
     .join('\r\n')
 
-  section.content = content
+  section.content = `<ul>${content}</ul>`
 }
