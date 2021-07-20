@@ -14,7 +14,7 @@
         <td>
           <!-- START STATS -->
 <ul>
-<li>📘 133 Public Repositories</li>
+<li>📘 134 Public Repositories</li>
 <li>👀 9 Following</li>
 <li>👓 32 Followers</li>
 </ul>
