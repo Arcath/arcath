@@ -2,7 +2,7 @@ import {fetchJson} from 'fetch-json'
 
 import {Section} from '../lib/readme'
 
-const IMPORT_URL = 'https://www.arcath.net/_data/posts/0.json'
+const IMPORT_URL = 'https://www.alaycock.co.uk/_data/posts/data.json'
 
 interface Entry {
   title: string
@@ -19,7 +19,7 @@ export const siteContent = async (section: Section) => {
 
   const content = data
     .map(entry => {
-      return `<li><a href="https://www.arcath.net${entry.href}">${entry.title}</a></li>`
+      return `<li><a href="https://www.alaycock.co.uk${entry.href}">${entry.title}</a></li>`
     })
     .join('\r\n')
 
