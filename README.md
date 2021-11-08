@@ -13,16 +13,31 @@
       <tr>
         <td>
           <!-- START STATS -->
+<ul>
+<li>📘 134 Public Repositories</li>
+<li>👀 9 Following</li>
+<li>👓 35 Followers</li>
+</ul>
 <!-- END STATS -->
         </td>
         <td>
           <!-- START SITE -->
+<ul><li><a href="https://www.alaycock.co.uk/2021/06/improving-nextjs-file-performance">Improving Next.JS File Performance</a></li>
+<li><a href="https://www.alaycock.co.uk/2021/06/adsync-missing">ADSync Service Missing on Server</a></li>
+<li><a href="https://www.alaycock.co.uk/2021/04/images-with-mdx-bundler">Images with MDX-Bundler</a></li>
+<li><a href="https://www.alaycock.co.uk/2021/03/mdx-bundler">MDX Bundler with Next.JS</a></li></ul>
 <!-- END SITE -->
         </td>
       </tr>
       <tr>
         <td colspan="2">
         <!-- START LANGUAGES -->
+<h3>Languages used in the last 3 years</h3>
+<table>
+<tbody>
+<tr><td>TypeScript</td><td>66.67%</td></tr><tr><td>JavaScript</td><td>23.81%</td></tr><tr><td>CoffeeScript</td><td>4.76%</td></tr><tr><td>Ruby</td><td>4.76%</td></tr>
+</tbody>
+</table>
 <!-- END LANGUAGES -->
         </td>
       </tr>
