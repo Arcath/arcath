@@ -13,21 +13,17 @@
       <tr>
         <td>
           <!-- START STATS -->
-<ul>
-<li>📘 134 Public Repositories</li>
-<li>👀 9 Following</li>
-<li>👓 32 Followers</li>
-</ul>
 <!-- END STATS -->
         </td>
         <td>
           <!-- START SITE -->
-<ul><li><a href="https://www.arcath.net/2021/06/improving-nextjs-file-performance">Improving Next.JS File Performance</a></li>
-<li><a href="https://www.arcath.net/2021/06/adsync-missing">ADSync Service Missing on Server</a></li>
-<li><a href="https://www.arcath.net/2021/04/images-with-mdx-bundler">Images with MDX-Bundler</a></li>
-<li><a href="https://www.arcath.net/2021/03/mdx-bundler">MDX Bundler with Next.JS</a></li>
-<li><a href="https://www.arcath.net/2021/02/next.js">Next.JS</a></li></ul>
 <!-- END SITE -->
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+        <!-- START LANGUAGES -->
+<!-- END LANGUAGES -->
         </td>
       </tr>
     </tbody>

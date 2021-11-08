@@ -2,24 +2,24 @@ import {fetchJson} from 'fetch-json'
 
 import {Section} from '../lib/readme'
 
-const IMPORT_URL = 'https://www.alaycock.co.uk/_data/posts/data.json'
+const IMPORT_URL = 'https://www.alaycock.co.uk/api/posts/all?limit=5'
 
 interface Entry {
   title: string
-  href: string
-  year: string
-  month: string
-  day: string
+  uri: string
   lead: string
   date: string
 }
 
 export const siteContent = async (section: Section) => {
-  const data: Entry[] = JSON.parse((await fetchJson.get(IMPORT_URL)).bodyText)
+  console.log('📰 Blog Posts')
+
+  const data: Entry[] = await fetchJson.get(IMPORT_URL)
 
   const content = data
+    .slice(0, 4)
     .map(entry => {
-      return `<li><a href="https://www.alaycock.co.uk${entry.href}">${entry.title}</a></li>`
+      return `<li><a href="https://www.alaycock.co.uk${entry.uri}">${entry.title}</a></li>`
     })
     .join('\r\n')
 

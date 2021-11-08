@@ -3,6 +3,8 @@ import {Octokit} from '@octokit/rest'
 import {Section} from '../lib/readme'
 
 export const statsContent = async (section: Section) => {
+  console.log('🧾 Github Stats')
+
   const stats = ['<ul>']
 
   const octokit = new Octokit()
