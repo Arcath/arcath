@@ -1,10 +1,16 @@
 import {Octokit} from '@octokit/rest'
 import {keys} from '@arcath/utils/lib/functions/keys'
 import {isBefore, subYears} from 'date-fns'
+import fs from 'fs'
+import path from 'path'
 
 import {Section} from '../lib/readme'
 
+const {writeFile} = fs.promises
+
 const REPO_PUSH_CUTOFF_YEARS = 3
+
+const SVG_PATH = path.join(process.cwd(), 'assets', 'languages.svg')
 
 export const languagesContent = async (section: Section) => {
   console.log('🏳️ Language Analysis')
@@ -53,7 +59,42 @@ export const languagesContent = async (section: Section) => {
     return count + languagesWithCounts[lang]
   }, 0)
 
+  const colors = [
+    '#3498db',
+    '#9b59b6',
+    '#2ecc71',
+    '#e67e22',
+    '#34495e',
+    '#f1c40f'
+  ]
+
+  let offset = 5
+
+  const svg = `
+  <svg version="1.1" width="500" height="10" xmlns="http://www.w3.org/2000/svg">
+
+  <clipPath id="bar">
+    <rect width="490" height="6" x="5" y="2" rx="3" />
+  </clipPath>
+
+  ${languages
+    .map((lang, i) => {
+      const percent =
+        Math.round((languagesWithCounts[lang] / total) * 10000) / 10000
+      const width = 490 * percent
+      const x = offset
+      offset += width
+
+      return `<rect width="${width}" fill="${colors[i]}" height="10" x="${x}" y="0" clip-path="url(#bar)" />`
+    })
+    .join('\r\n')}
+  </svg>
+  `
+
+  await writeFile(SVG_PATH, svg)
+
   section.content = `<h3>Languages used in the last ${REPO_PUSH_CUTOFF_YEARS} years</h3>
+  ![Langauges Graph](./assets/languages.svg)
 <table>
 <tbody>
 ${languages

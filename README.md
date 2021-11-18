@@ -35,7 +35,7 @@
 <h3>Languages used in the last 3 years</h3>
 <table>
 <tbody>
-<tr><td>TypeScript</td><td>66.67%</td></tr><tr><td>JavaScript</td><td>23.81%</td></tr><tr><td>CoffeeScript</td><td>4.76%</td></tr><tr><td>Ruby</td><td>4.76%</td></tr>
+<tr><td>TypeScript</td><td>70%</td></tr><tr><td>JavaScript</td><td>20%</td></tr><tr><td>CoffeeScript</td><td>5%</td></tr><tr><td>Ruby</td><td>5%</td></tr>
 </tbody>
 </table>
 <!-- END LANGUAGES -->
