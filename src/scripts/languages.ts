@@ -94,12 +94,12 @@ export const languagesContent = async (section: Section) => {
   await writeFile(SVG_PATH, svg)
 
   section.content = `<h3>Languages used in the last ${REPO_PUSH_CUTOFF_YEARS} years</h3>
-  ![Langauges Graph](./assets/languages.svg)
+<img src="assets/languages.svg" alt="Languages Graph" />
 <table>
 <tbody>
 ${languages
-  .map(lang => {
-    return `<tr><td>${lang}</td><td>${
+  .map((lang, i) => {
+    return `<tr><td>${lang}</td><td style="background-color:${colors[i]};">${
       Math.round((languagesWithCounts[lang] / total) * 10000) / 100
     }%</td></tr>`
   })
