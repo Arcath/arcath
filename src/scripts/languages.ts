@@ -1,5 +1,6 @@
 import {Octokit} from '@octokit/rest'
 import {keys} from '@arcath/utils/lib/functions/keys'
+import {asyncMap} from '@arcath/utils/lib/functions/async-map'
 import {isBefore, subYears} from 'date-fns'
 import fs from 'fs'
 import path from 'path'
@@ -10,7 +11,8 @@ const {writeFile} = fs.promises
 
 const REPO_PUSH_CUTOFF_YEARS = 3
 
-const SVG_PATH = path.join(process.cwd(), 'assets', 'languages.svg')
+const ASSETS_PATH = path.join(process.cwd(), 'assets')
+const SVG_PATH = path.join(ASSETS_PATH, 'languages.svg')
 
 export const languagesContent = async (section: Section) => {
   console.log('🏳️ Language Analysis')
@@ -93,13 +95,21 @@ export const languagesContent = async (section: Section) => {
 
   await writeFile(SVG_PATH, svg)
 
+  await asyncMap(colors, async (color, i) => {
+    const colorSVG = `<svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="10" fill="${color}" />
+  </svg>`
+
+    await writeFile(path.join(ASSETS_PATH, `circle-${i}.svg`), colorSVG)
+  })
+
   section.content = `<h3>Languages used in the last ${REPO_PUSH_CUTOFF_YEARS} years</h3>
 <img src="assets/languages.svg" alt="Languages Graph" />
 <table>
 <tbody>
 ${languages
   .map((lang, i) => {
-    return `<tr><td>${lang}</td><td style="background-color:${colors[i]};">${
+    return `<tr><td><img src="assets/circle-${i}.svg" alt="Language Color" /> ${lang}</td><td>${
       Math.round((languagesWithCounts[lang] / total) * 10000) / 100
     }%</td></tr>`
   })
