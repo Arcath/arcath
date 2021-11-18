@@ -33,6 +33,7 @@
         <td colspan="2">
         <!-- START LANGUAGES -->
 <h3>Languages used in the last 3 years</h3>
+  ![Langauges Graph](./assets/languages.svg)
 <table>
 <tbody>
 <tr><td>TypeScript</td><td>70%</td></tr><tr><td>JavaScript</td><td>20%</td></tr><tr><td>CoffeeScript</td><td>5%</td></tr><tr><td>Ruby</td><td>5%</td></tr>
