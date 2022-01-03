@@ -16,7 +16,7 @@
 <ul>
 <li>📘 134 Public Repositories</li>
 <li>👀 9 Following</li>
-<li>👓 35 Followers</li>
+<li>👓 36 Followers</li>
 </ul>
 <!-- END STATS -->
         </td>
