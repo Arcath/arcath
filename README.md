@@ -16,7 +16,7 @@
 <ul>
 <li>📘 134 Public Repositories</li>
 <li>👀 9 Following</li>
-<li>👓 36 Followers</li>
+<li>👓 37 Followers</li>
 </ul>
 <!-- END STATS -->
         </td>
@@ -36,7 +36,7 @@
 <img src="assets/languages.svg" alt="Languages Graph" />
 <table>
 <tbody>
-<tr><td><img src="assets/circle-0.svg" alt="Language Color" /> TypeScript</td><td>70%</td></tr><tr><td><img src="assets/circle-1.svg" alt="Language Color" /> JavaScript</td><td>20%</td></tr><tr><td><img src="assets/circle-2.svg" alt="Language Color" /> CoffeeScript</td><td>5%</td></tr><tr><td><img src="assets/circle-3.svg" alt="Language Color" /> Ruby</td><td>5%</td></tr>
+<tr><td><img src="assets/circle-0.svg" alt="Language Color" /> TypeScript</td><td>70.59%</td></tr><tr><td><img src="assets/circle-1.svg" alt="Language Color" /> JavaScript</td><td>17.65%</td></tr><tr><td><img src="assets/circle-2.svg" alt="Language Color" /> CoffeeScript</td><td>5.88%</td></tr><tr><td><img src="assets/circle-3.svg" alt="Language Color" /> Ruby</td><td>5.88%</td></tr>
 </tbody>
 </table>
 <!-- END LANGUAGES -->
