@@ -24,7 +24,6 @@
     "fetch-json": "^2.6.4",
     "install": "^0.13.0",
     "node-fetch": "^3.2.3",
-    "npm": "^7.18.1",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   },
