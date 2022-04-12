@@ -5,9 +5,9 @@
     <rect width="490" height="6" x="5" y="2" rx="3" />
   </clipPath>
 
-  <rect width="343" fill="#3498db" height="10" x="5" y="0" clip-path="url(#bar)" />
-<rect width="98" fill="#9b59b6" height="10" x="348" y="0" clip-path="url(#bar)" />
-<rect width="24.5" fill="#2ecc71" height="10" x="446" y="0" clip-path="url(#bar)" />
-<rect width="24.5" fill="#e67e22" height="10" x="470.5" y="0" clip-path="url(#bar)" />
+  <rect width="345.89099999999996" fill="#3498db" height="10" x="5" y="0" clip-path="url(#bar)" />
+<rect width="86.485" fill="#9b59b6" height="10" x="350.89099999999996" y="0" clip-path="url(#bar)" />
+<rect width="28.811999999999998" fill="#2ecc71" height="10" x="437.376" y="0" clip-path="url(#bar)" />
+<rect width="28.811999999999998" fill="#e67e22" height="10" x="466.188" y="0" clip-path="url(#bar)" />
   </svg>
   

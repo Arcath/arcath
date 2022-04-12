@@ -1,6 +1,5 @@
 import {Octokit} from '@octokit/rest'
-import {keys} from '@arcath/utils/lib/functions/keys'
-import {asyncMap} from '@arcath/utils/lib/functions/async-map'
+import {keys, asyncMap} from '@arcath/utils'
 import {isBefore, subYears} from 'date-fns'
 import fs from 'fs'
 import path from 'path'

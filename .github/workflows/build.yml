@@ -33,8 +33,11 @@ jobs:
         env:
           HUSKY_SKIP_INSTALL: true
 
-      - name: 🏗 Build Readme
+      - name: 🏗 Compile Typescript
         run: npm run build
+
+      - name: 📝 Write Readme
+        run: npm run build:readme
 
       - name: 🏷 Release
         uses: EndBug/add-and-commit@v7

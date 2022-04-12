@@ -1,8 +1,8 @@
-import {getReadme, writeReadme} from './lib/readme'
+import {getReadme, writeReadme} from './lib/readme.js'
 
-import {languagesContent} from './scripts/languages'
-import {statsContent} from './scripts/stats'
-import {siteContent} from './scripts/website'
+import {languagesContent} from './scripts/languages.js'
+import {statsContent} from './scripts/stats.js'
+import {siteContent} from './scripts/website.js'
 
 const main = async () => {
   const readme = await getReadme()

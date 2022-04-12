@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "noEmit": false,
+    "target": "es6",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "es6",
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"]
+}
